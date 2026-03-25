@@ -4,17 +4,20 @@ let husinfo1 = $("#husinfo1")
 let husinfo2 = $("#husinfo2")
 let husinfo3 = $("#husinfo3")
 
-$("#husplustext" ).hide();
-wrapper.css('height', '100vh')
-wrapper.css('grid-template-rows', '15% 70% 15%')
+husinfo1.hide()
+husinfo2.hide()
+husinfo3.hide()
+wrapper.css('height', '100vh');
 wrapper.css('grid-template-areas', 'rubrik husbild info')
+wrapper.css('grid-template-rows', '15% 75% 0% 10%')
 if($( document ).width() <= '1200'){
     wrapper.css('height', '220vh')
-    wrapper.css('grid-template-rows', '10% 80% 10%')
+    wrapper.css('grid-template-rows', '10% 80% 0% 10%')
     $("#huswrapper").css('flex-direction', 'column')
     $("#huswrapper").css('justify-content', 'center')
     $("#huswrapper").css('align-items', 'center')
     $("#huswrapper").css('margin-bottom', '0px')
+    $("#rubrik").css('width', '80%')
 
 }
 

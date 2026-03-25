@@ -3,12 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Ruckel säljes</title>
 </head>
 <body>
-    
-    <div>hej</div>
-    <div>hej1</div>
+    <div id="wrapper">
+        <header id="rubrik">Rubrik</header>
+        
+        <div id="huswrapper">
+            <div class= "rutaavbilden_innanclick" >
+                <section class="hus" id="hus1">
+                    
+                </section>
+                <p class="text">Who is this?</p>
+            </div>
+            <div class= "rutaavbilden_innanclick">
+                <section class="hus" id="hus2"></section>
+                <p class="text">Am I you?</p>
+            </div>
+            <div class= "rutaavbilden_innanclick">
+                <section class="hus" id="hus3"></section>
+                <p class="text">Hej am yu!!</p>
+                
+            </div>
+            
+            
+        </div>
+        
+        
+        <!-- This part is displayed when clicked -->
+        <div id="husplustext">
+            <section class="husinfo">
+                <img src="img/bild1.jpg" alt="A ground plus 1 house with a sunny weather." class="storbild">
+                <p class="hustext"></p>
+            </section>
 
+            <section class="husinfo">   
+                <img src="img/bild2.jpg" alt="A house located in the middle of an open field with cloudy weather." class="storbild">
+                <p class="hustext" ></p>
+            </section>
+
+            <section class="husinfo">
+                <img src="img/bild3" alt="" class="storbild">
+                <p class="hustext"></p>
+            </section>
+        </div>
+        <footer id="info">Hejsan svejsan</footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>  
 </body>
 </html>

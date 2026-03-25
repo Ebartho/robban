@@ -1,0 +1,144 @@
+head{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: beige;
+}
+#wrapper{
+    display: grid;
+    height: 350vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 20% 70% 5%;
+    margin: 0px;
+    padding :0px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+    "rubrik"
+    "husbild"
+    "husinfo"
+    "info";
+    
+}
+.storbild {
+    justify-content: center;
+    align-items: center;
+}
+#rubrik {
+    border-color: black;
+    border-radius: 20%;
+    grid-area: rubrik;
+    border-style: solid;
+    width: 1000px;
+    height: 80%;
+   
+    text-align: center;
+}
+#huswrapper{
+    display: flex;    
+    grid-area: husbild;
+    gap: 60px;
+  
+    width: 100%;
+    justify-content: center;
+    
+}
+.hus{
+    height: 450px;
+    width: 450px;
+    border-width: 2px;
+    border-style:solid ;
+    border-color: black;
+    border-radius: 20px;
+    
+}
+footer {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    grid-area: info;
+    margin:0px;
+    width: 100%;
+    height:100%;
+    
+}
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    text-size-adjust: 10px;
+    text-align: center;
+}
+#husplustext{
+    grid-area: husinfo;
+    width: 100%;
+    display:flex;
+    justify-items: center;
+    align-items: center;
+}
+.husinfo{
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    width: 1000px;
+    height: 700px;
+    
+}
+.rutaavbilden_innanclick{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* @media (max-width: 1500px){
+    #huswrapper {
+        flex-direction: column;
+        margin-bottom: 0px;
+        justify-content: center;
+        align-items: center;}
+
+    #wrapper{
+    height: 350vh;
+    grid-template-rows: 5% 40% 52.5% 2.5%;
+}
+    
+    .hus{
+        border-color: red;
+        height: 360px;
+        width: 360px;
+    }
+    #wrapper {
+        height: 450vh;
+    }
+}
+
+@media (max-width: 1000px){
+    #wrapper {
+        height: 500vh;
+    }
+}
+
+@media (max-width: 750px){
+    .husinfo{
+        width: 400px;
+        height: 900px;
+        border-color: red;
+    }
+    #rubrik {
+        width: 400px;
+    }
+    #info{
+        width: 98%;
+    }
+    
+    #wrapper{
+    grid-template-rows: 5% 30% 58.5% 1.5%;
+    
+    height: 510vh;
+    
+} */
+/*     
+} */

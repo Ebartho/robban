@@ -4,7 +4,9 @@ let husinfo1 = $("#husinfo1")
 let husinfo2 = $("#husinfo2")
 let husinfo3 = $("#husinfo3")
 
-$("#husplustext" ).hide();
+husinfo1.hide()
+husinfo2.hide()
+husinfo3.hide()
 wrapper.css('height', '100vh');
 wrapper.css('grid-template-areas', 'rubrik husbild info')
 wrapper.css('grid-template-rows', '15% 75% 0% 10%')

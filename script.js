@@ -1,4 +1,8 @@
-let wrapper = $("#wrapper");
+let wrapper = $("#wrapper")
+let husplustext = $("#husplustext")
+let husinfo1 = $("#husinfo1")
+let husinfo2 = $("#husinfo2")
+let husinfo3 = $("#husinfo3")
 
 $("#husplustext" ).hide();
 wrapper.css('height', '100vh');
@@ -16,21 +20,22 @@ if($( document ).width() <= '1200'){
 }
 
 $("#hus1").on("click", function () {
-    $("#husplustext" ).show();
-    $(this).css('position', 'absolute')
-    $(this).css('position', 'absolute')
+    husinfo1.show();
+    husinfo1.css('position', 'absolute')
+    husinfo1.css('top', '500px')
+    husinfo1.css('left', '500px')
     console.log("Klick 1 fungerar")
 });
 $("#hus2").on("click", function () {
-    $(this).css(
-        console.log("Klick 2 fungerar")
-        
-    )
+    husinfo2.show();
+    husinfo2.css('position', 'absolute')
+    husinfo2.css('position', 'absolute')
+    console.log("Klick 2 fungerar")
 });
 $("#hus3").on("click", function () {
-    $(this).css(
-        console.log("Klick 3 fungerar")
-        
-    )
+    husinfo3.show();
+    husinfo3.css('position', 'absolute')
+    husinfo3.css('position', 'absolute')
+    console.log("Klick 3 fungerar")
 });
 

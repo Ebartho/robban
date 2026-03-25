@@ -93,6 +93,24 @@ footer {
     flex-direction: column;
     
 }
+
+/* Ruftana */
+
+#hus1 > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+#hus2 > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+#hus3 > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
 /* @media (max-width: 1500px){
     #huswrapper {
         flex-direction: column;

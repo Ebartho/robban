@@ -1,70 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hus försäljning">
     <link rel="stylesheet" href="style.css">
-    <title>Ruckel säljes</title>
+    <title>Ruckel försäljning</title>
+    
 </head>
 <body>
+    <div id="graybackground"></div>
     <div id="wrapper">
         <h1 id="rubrik">Birger Husförsäljning </h1>
         
-        <div id="huswrapper">
-            <div class= "rutaavbilden_innanclick" >
-                <section class="hus" id="hus1">
-                    <img src="img/bild1.jpg" alt="A ground plus 1 house with a sunny weather." class="storbild">
-                </section>
-                <p class="text">Modern lyxvilla med panoramautsikt</p>
-            </div>
-            <div class= "rutaavbilden_innanclick">
-                <section class="hus" id="hus2">
-                    <img src="img/bild2.jpg" alt="A ground plus 1 house with a sunny weather." class="storbild">
-                </section>
-                <p class="text">Charmigt lantligt hus i rogivande miljö</p>
-            </div>
-            <div class= "rutaavbilden_innanclick">
-                <section class="hus" id="hus3">
-                    <img src="img/bild3.jpg" alt="A ground plus 1 house with a sunny weather." class="storbild">
-                </section>
-                <p class="text">Rustik fastighet med historisk karaktär</p>
+        <main id="huswrapper">
+            <section class= "rutaavbilden_innanclick" >
+                <button aria-label="Öppna information om hus nummer 2" class="hus" id="hus1">
+                    <img src="img/bild1.jpg" alt="Modern vit villa med stora glaspartier, balkonger och välskött gräsmatta i soligt läge." class="storbild">
+                </button>
+                <h2 class="text">Modern lyxvilla med panoramautsikt</h2>
+            </section>
+            <section class= "rutaavbilden_innanclick">
+                <button aria-label="Öppna information om hus nummer 2" class="hus" id="hus2">
+                    <img src="img/bild2.jpg" alt="Litet charmigt hus med grästak i öppet landskap under molnig himmel." class="storbild">
+                </button >
+                <h2 class="text">Charmigt lantligt hus i rogivande miljö</h2>
+            </section>
+            <section class= "rutaavbilden_innanclick">
+                <button aria-label="Öppna information om hus nummer 2" class="hus" id="hus3">
+                    <img src="img/bild3.jpg" alt="Äldre rustikt hus med dekorativa fönster omgivet av grönskande fält och ensamt träd." class="storbild">
+                </button>
+                <h2 class="text">Rustik fastighet med historisk karaktär</h2>
                 
-            </div>
+            </section>
             
             
-        </div>
+        </main>
             
         <!-- This part is displayed when clicked -->
-        <div id="husplustext">
-
+        <article id="husplustext">
             <section class="husinfo" id="husinfo1">
                 <img src="img/bild1.jpg" alt="Modern vit villa med stora glaspartier, balkonger och välskött gräsmatta i soligt läge." class="storbild">
-                <p class="hustext">Välkommen till denna stilrena och moderna villa som kombinerar elegans med funktionalitet. Bostaden präglas av stora glaspartier som släpper in rikligt med naturligt ljus och skapar en harmonisk koppling mellan inne- och utemiljö.
+                <button  aria-label="Stäng pop-up fönstret" class="closeKnapp" id="closeKnapp1"> X </button>
+                <h3 class="hustext">Välkommen till denna stilrena och moderna villa som kombinerar elegans med funktionalitet. Bostaden präglas av stora glaspartier som släpper in rikligt med naturligt ljus och skapar en harmonisk koppling mellan inne- och utemiljö.
 
-Den öppna planlösningen erbjuder generösa sällskapsytor, perfekt för både vardagsliv och sociala tillställningar. De rymliga terrasserna på övre plan ger en fantastisk utsikt över omgivningarna – en idealisk plats för avkoppling eller middagar i solnedgången.
+                Den öppna planlösningen erbjuder generösa sällskapsytor, perfekt för både vardagsliv och sociala tillställningar. De rymliga terrasserna på övre plan ger en fantastisk utsikt över omgivningarna – en idealisk plats för avkoppling eller middagar i solnedgången.
 
-Huset är omgivet av en välskött gräsmatta och smakfullt anlagd trädgård, vilket skapar en privat och lugn oas. Här bor du med hög komfort, modern design och en känsla av exklusivitet i varje detalj.</p>
+                Huset är omgivet av en välskött gräsmatta och smakfullt anlagd trädgård, vilket skapar en privat och lugn oas. Här bor du med hög komfort, modern design och en känsla av exklusivitet i varje detalj.</h3>
             </section>
 
             <section class="husinfo" id="husinfo2">   
                 <img src="img/bild2.jpg" alt="Litet charmigt hus med grästak i öppet landskap under molnig himmel." class="storbild">
-                <p class="hustext" >Drömmer du om ett lugnt liv nära naturen? Detta unika hus erbjuder en idyllisk tillvaro mitt i öppna landskap med vidsträckta vyer. Med sitt karakteristiska utseende och grästak smälter huset naturligt in i omgivningen och skapar en genuin och naturnära känsla.
+                <button aria-label="Stäng pop-up fönstret" class="closeKnapp" id="closeKnapp2" > X </button>
+                <h3 class="hustext" >Drömmer du om ett lugnt liv nära naturen? Detta unika hus erbjuder en idyllisk tillvaro mitt i öppna landskap med vidsträckta vyer. Med sitt karakteristiska utseende och grästak smälter huset naturligt in i omgivningen och skapar en genuin och naturnära känsla.
 
-Bostaden erbjuder en varm och inbjudande atmosfär med traditionella detaljer och en planlösning som passar både permanentboende och fritidshus. Här kan du njuta av tystnaden, den friska luften och de vackra årstidsskiftningarna direkt utanför dörren.
+                Bostaden erbjuder en varm och inbjudande atmosfär med traditionella detaljer och en planlösning som passar både permanentboende och fritidshus. Här kan du njuta av tystnaden, den friska luften och de vackra årstidsskiftningarna direkt utanför dörren.
 
-Perfekt för dig som söker en harmonisk tillflyktsort bort från stadens tempo – utan att kompromissa med komfort.</p>
+                Perfekt för dig som söker en harmonisk tillflyktsort bort från stadens tempo – utan att kompromissa med komfort.</h3>
             </section>
 
             <section class="husinfo" id="husinfo3">
                 <img src="img/bild3.jpg" alt="Äldre rustikt hus med dekorativa fönster omgivet av grönskande fält och ensamt träd." class="storbild">
-                <p class="hustext">Denna unika byggnad bär på en rik historia och erbjuder en charm som är svår att hitta i moderna hem. Med sin vackra fasad, dekorativa fönster och gedigna konstruktion är detta en fastighet med stor potential.
+                <button aria-label="Stäng pop-up fönstret" class="closeKnapp" id="closeKnapp3"> X </button>
+                <h3 class="hustext">Denna unika byggnad bär på en rik historia och erbjuder en charm som är svår att hitta i moderna hem. Med sin vackra fasad, dekorativa fönster och gedigna konstruktion är detta en fastighet med stor potential.
 
-Belägen i ett naturskönt landskap omgiven av grönska och öppna fält, erbjuder huset en lugn och inspirerande miljö. Interiören ger möjlighet att skapa ett personligt boende där originaldetaljer kan bevaras och kombineras med moderna inslag.
+                Belägen i ett naturskönt landskap omgiven av grönska och öppna fält, erbjuder huset en lugn och inspirerande miljö. Interiören ger möjlighet att skapa ett personligt boende där originaldetaljer kan bevaras och kombineras med moderna inslag.
 
-Perfekt för den som söker något utöver det vanliga – kanske ett drömboende, ett kreativt projekt eller en investering med karaktär och själ.</p>
+                Perfekt för den som söker något utöver det vanliga – kanske ett drömboende, ett kreativt projekt eller en investering med karaktär och själ.</h3>
             </section>
-        </div>
-        <footer id="info">Hejsan svejsan</footer>
+        </article>
+        <footer id="info">Kontakt information: Email: hej@gmail.com <br> Telefonnummer: 070-700-70-70 <br> Adress: Ankeborgsvägen 67
+                       
+    </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>  

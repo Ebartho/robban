@@ -8,6 +8,7 @@ let husinfo1Open = false
 let husinfo2Open = false
 let husinfo3Open = false
 
+//Ändrar utseende på saker när javascript är på
 husinfo1.hide()
 husinfo2.hide()
 husinfo3.hide()
@@ -25,6 +26,9 @@ husinfo3.css('bottom', '100px')
 wrapper.css('height', '100vh');
 wrapper.css('grid-template-areas', 'rubrik husbild info')
 wrapper.css('grid-template-rows', '15% 75% 0% 10%')
+
+
+// Alla ändringar för responsive läget, i mobil form
 if($( document ).width() <= '1200'){
     wrapper.css('height', '250vh')
     graybackground.css('height', '250vh')
@@ -50,6 +54,7 @@ if($( document ).width() <= '1200'){
 
 
 }
+// Pop upp rutorna göms när man klickar på kryss knapp
 $("#closeKnapp1").on("click", function (){
     if(husinfo1Open){
         husinfo1.hide()
@@ -71,6 +76,8 @@ $("#closeKnapp3").on("click", function (){
         graybackground.hide()
     } 
 });
+
+// Visar pop upp rutorna när man klickar på bilderna av husen
 $("#hus1").on("click", function () {
     husinfo2.hide()
     husinfo3.hide()
